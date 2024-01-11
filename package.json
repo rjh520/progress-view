@@ -1,6 +1,6 @@
 {
   "name": "@react-native-oh-library/progress-view",
-  "version": "1.4.2-0.0.2",
+  "version": "1.4.2-0.0.3",
   "description": "React Native Progress View iOS Library",
   "harmony": {
     "alias": "@react-native-community/progress-view"
@@ -51,6 +51,9 @@
   "resolutions": {
     "jimp": "^0.10.0",
     "metro": "0.64.0"
+  },
+  "dependencies": {
+    "@react-native-community/progress-view":"^1.4.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
