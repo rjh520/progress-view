@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "progress-view",
+        "License": "MIT License",
+        "License File": "https://github.com/react-native-oh-library/progress-view/blob/sig/LICENSE",
+        "Version Number": "1.4.2-0.0.3",
+        "Owner" : "Jesse Katsumata <niconico.clarinet@gmail.com>"
+        "Upstream URL": "https://github.com/react-native-oh-library/progress-view",
+        "Description": "ProgressView Component for react-native iOS/macOS/Windows"
+    }
+]
