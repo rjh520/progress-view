@@ -2037,6 +2037,11 @@
   resolved "https://registry.yarnpkg.com/@react-native-community/eslint-plugin/-/eslint-plugin-1.1.0.tgz#e42b1bef12d2415411519fd528e64b593b1363dc"
   integrity sha512-W/J0fNYVO01tioHjvYWQ9m6RgndVtbElzYozBq1ZPrHO/iCzlqoySHl4gO/fpCl9QEFjvJfjPgtPMTMlsoq5DQ==
 
+"@react-native-community/progress-view@^1.4.2":
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/@react-native-community/progress-view/-/progress-view-1.4.2.tgz#16ef7cff8ac5b034d2ad3281a647a8ed6fe1a8f0"
+  integrity sha512-eFn8hssvFjr0w78mdlN0rt2KY5ptR5DAj2sjn7CWlmEkdFuOKAYt6HnHP1cKdXFrmeH31MVbqib43+iA6wEbWQ==
+
 "@react-native-windows/cli@0.68.5":
   version "0.68.5"
   resolved "https://registry.yarnpkg.com/@react-native-windows/cli/-/cli-0.68.5.tgz#0ea22a0b332cb8c200a01ca7008a3f8f1a1e0e24"
