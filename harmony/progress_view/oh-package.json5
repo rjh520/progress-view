@@ -3,11 +3,11 @@
   "devDependencies": {
   },
   "author": "Huawei",
-  "name": "rnoh-progress-view",
+  "name": "@react-native-oh-library/progress-view",
+  "version": "1.4.2-0.0.5",
   "description": "progress-view for HarmonyOS",
   "main": "index.ets",
-  "version": "1.4.2-0.0.4",
   "dependencies": {
-    "rnoh": "file:../rnoh"
+    "@rnoh/react-native-openharmony": "file:../react_native_openharmony"
   }
 }
