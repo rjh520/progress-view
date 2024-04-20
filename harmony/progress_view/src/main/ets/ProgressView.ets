@@ -30,7 +30,7 @@ import {
   ComponentBuilderContext,
   ColorSegments,
   convertColorSegmentsToString,
-} from 'rnoh'
+} from '@rnoh/react-native-openharmony'
 
 export const PROGRESS_VIEW_TYPE: string = "RNCProgressView"
 
