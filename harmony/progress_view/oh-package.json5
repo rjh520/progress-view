@@ -4,7 +4,7 @@
   },
   "author": "Huawei",
   "name": "@react-native-oh-library/progress-view",
-  "version": "1.4.2-0.0.5",
+  "version": "1.4.2-0.0.6",
   "description": "progress-view for HarmonyOS",
   "main": "index.ets",
   "dependencies": {
