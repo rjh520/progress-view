@@ -23,8 +23,6 @@
   "types": "js/index.d.ts",
   "files": [
     "common",
-    "android",
-    "ios",
     "harmony",
     "js",
     "macos",
@@ -88,13 +86,5 @@
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
-  },
-  "codegenConfig": {
-    "name": "progressview",
-    "type": "components",
-    "jsSrcsDir": "./js",
-    "android": {
-      "javaPackageName": "com.reactnativecommunity.progressview"
-    }
   }
 }
