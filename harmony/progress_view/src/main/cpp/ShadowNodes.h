@@ -24,7 +24,7 @@
 
 #pragma once
 #include "Props.h"
-#include <react/renderer/components/view/concreteViewShadowNode.h>
+#include <react/renderer/components/view/ConcreteViewShadowNode.h>
 #include <jsi/jsi.h>
 
 namespace facebook {
