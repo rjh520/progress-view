@@ -25,18 +25,31 @@
 #include "RNOH/Package.h"
 #include "ComponentDescriptor.h"
 #include "ProgressViewJSIBinder.h"
-#include "ProgressViewNapiBinder.h"
+#include "ProgressViewComponentInstance.h"
 
 namespace rnoh{
-class ProgressViewPackage : public Package {
+class ProgressViewComponentInstanceFactoryDelegate : public ComponentInstanceFactoryDelegate {
 public:
-    ProgressViewPackage(Package::Context ctx) : Package(ctx) {}
-    std::vector<facebook::react::ComponentDescriptorProvider> createComponentDescriptorProviders() override {
-        return {facebook::react::concreteComponentDescriptorProvider<facebook::react::RNCProgressViewComponentDescriptor>()};
+    using ComponentInstanceFactoryDelegate::ComponentInstanceFactoryDelegate;
+
+    ComponentInstance::Shared create(ComponentInstance::Context ctx) override {
+        if (ctx.componentName == "RNCProgressView") {
+            return std::make_shared<ProgressViewComponentInstance>(std::move(ctx));
+        }
+        return nullptr;
+    }
+};
+
+class ProgressViewCapiPackage : public Package {
+public:
+    ProgressViewCapiPackage(Package::Context ctx) : Package(ctx) {}
+    
+    ComponentInstanceFactoryDelegate::Shared createComponentInstanceFactoryDelegate() override {
+        return std::make_shared<ProgressViewComponentInstanceFactoryDelegate>();
     }
     
-    ComponentNapiBinderByString createComponentNapiBinderByName() override {
-        return {{"RNCProgressView", std::make_shared<ProgressViewNapiBinder>()}};
+    std::vector<facebook::react::ComponentDescriptorProvider> createComponentDescriptorProviders() override {
+        return {facebook::react::concreteComponentDescriptorProvider<facebook::react::RNCProgressViewComponentDescriptor>()};
     }
     
     ComponentJSIBinderByString createComponentJSIBinderByName() override {

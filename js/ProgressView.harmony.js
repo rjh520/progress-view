@@ -19,6 +19,7 @@ export default function ProgressView(props) {
     progressTintColor: props.progressTintColor,
     trackTintColor: props.trackTintColor,
     isIndeterminate: props.isIndeterminate,
+    progressViewStyle: props.progressViewStyle,
     style: [{height: 20}, props.style],
   };
 
