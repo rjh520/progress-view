@@ -35,6 +35,7 @@ class ProgressViewJSIBinder : public ViewComponentJSIBinder{
         object.setProperty(rt, "progressImage", "object");
         object.setProperty(rt, "trackImage", "object");
         object.setProperty(rt, "isIndeterminate", "boolean");
+        object.setProperty(rt, "progressViewStyle", "string");
         return object;
     }
 };
